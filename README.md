@@ -29,6 +29,7 @@ Create file `.env` with required varilables (export var=...):
 Create databases and fill it with examples data:
 
     rake db:create
+    rake db:migrate && rake db:test:prepare
     rake db:seed
 
 To run this application locally, cd into the sinatra-example directory that you cloned and run:

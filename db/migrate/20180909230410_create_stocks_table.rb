@@ -1,5 +1,5 @@
 class CreateStocksTable < ActiveRecord::Migration[5.2]
-  def change
+  def up
     create_table :stocks do |t|
       t.belongs_to :book, index: true
       t.belongs_to :shop, index: true
@@ -9,6 +9,10 @@ class CreateStocksTable < ActiveRecord::Migration[5.2]
       t.timestamps
     end
 
-    add_index :book_in_shop, %i[book_id shop_id], unique: true
+    add_index :stocks, %i[book_id shop_id], unique: true
+  end
+
+  def down
+    drop_table :stocks
   end
 end
