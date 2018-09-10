@@ -1,0 +1,11 @@
+default: &default
+  adapter: sqlite3
+  encoding: unicode
+
+development: &development
+  <<: *default
+  database: <%= ENV['project'] %>
+
+test:
+  <<: *default
+  database: <%= "#{ENV['project']}_test" %>

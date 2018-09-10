@@ -1,0 +1,45 @@
+pre {
+  background-color: ghostwhite;
+  border: 1px solid silver;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+.json-key {
+  color: brown;
+}
+.json-value {
+  color: navy;
+}
+.json-string {
+  color: olive;
+}
+.hidden {
+  display: none;
+}
+
+pre.success {
+  color: olive;
+}
+pre.failed {
+  color: brown;
+}
+
+input[type=text] {
+  padding:5px;
+  border:2px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input[type=text]:focus {
+  border-color:#333;
+}
+
+input[type=submit] {
+  padding:7px 15px;
+  background:#ccc;
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}

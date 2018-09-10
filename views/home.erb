@@ -1,0 +1,33 @@
+<h1>This is a home page for Bookshop API</h1>
+
+<h3>Get shop where sales books of specific publisher</h3>
+<pre>/api/v1/stock/for_publisher/:publisher_id</pre>
+<form id="get_shops" name="publisher_request">
+  <label for="publisher_id">Publisher ID</label>
+  <input type="text" name="publisher_id" />
+
+  <input type="submit" value="get shops" />
+</form>
+
+<hr>
+
+<h3>Mark copies of a book as sold for specific shop</h3>
+<pre>/api/v1/stock/sold</pre>
+<form id="post_sold" name="sold_request">
+  <label for="shop_id">Shop ID</label>
+  <input type="text" name="shop_id" />
+  <label for="book_id">Book ID</label>
+  <input type="text" name="book_id" />
+  <label for="amount">Amount of sold copies</label>
+  <input type="text" name="amount" value="1" />
+
+  <input type="submit" value="send data" />
+</form>
+
+<hr>
+<br>
+<div id="response" class="hidden">
+  <h3>Response</h3>
+  <pre class="status"></pre>
+  <pre class="body"></pre>
+</div>
